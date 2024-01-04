@@ -4,12 +4,12 @@
 
 % contractile element (CE)
 %===========================
-ext.CE.F_max = 140;
-ext.CE.l_CEopt = 0.0025;              
+ext.CE.F_max = 100;
+ext.CE.l_CEopt = 0.01;              
 
 % serial elastic element (SEE)
 % ============================
-ext.SEE.l_SEE0        = 0.025;       % rest length of SEE in [m]
+ext.SEE.l_SEE0        = 0.01;       % rest length of SEE in [m]
 
 % load standard parameter set
 ext = Library_mtu_simulink_mtu_standard_parameters(ext);

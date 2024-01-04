@@ -4,12 +4,12 @@
 
 % contractile element (CE)
 %===========================
-flex.CE.F_max = 1550;                 % F_max in [N] %source: Kistemaker2006, 
-flex.CE.l_CEopt = 0.093;              % optimal length of CE in [m] %source: Kistemaker2006,
+flex.CE.F_max = 100;                 % F_max in [N] %source: Kistemaker2006, 
+flex.CE.l_CEopt = 0.01;              % optimal length of CE in [m] %source: Kistemaker2006,
 
 % serial elastic element (SEE)
 % ============================
-flex.SEE.l_SEE0        = 0.187;       % rest length of SEE in [m]
+flex.SEE.l_SEE0        = 0.01;       % rest length of SEE in [m]
 
 % load standard parameter set
 flex = Library_mtu_simulink_mtu_standard_parameters(flex);
