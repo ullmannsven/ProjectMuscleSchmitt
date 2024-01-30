@@ -1,4 +1,6 @@
 %% Script that performs Scissors Paper Roch for
+disp("Start Scissors paper rock game!");
+disp("See progress in Simulink window!")
 % Generate a single random integer between 0 and 2
 select_action_1 = randi([0, 2]);
 select_action_2 = randi([0, 2]);
@@ -23,19 +25,19 @@ if select_action_1 == 0
     q.middle2.flex = 0;
     
     q.ring1.ext = 0;
-    q.ring1.flex = 0.5;
+    q.ring1.flex = 1;
     q.ring2.ext = 0;
-    q.ring2.flex = 0.5;
+    q.ring2.flex = 1;
     
     q.small1.ext = 0;
-    q.small1.flex = 0.5;
+    q.small1.flex = 1;
     q.small2.ext = 0;
-    q.small2.flex = 0.5;
+    q.small2.flex = 1;
 end
 
 % Case paper
 if select_action_1 == 1
-    q.thumb1.ext = 0.4;
+    q.thumb1.ext = 1;
     q.thumb1.flex = 0;
     
     q.index1.ext = 0;
@@ -164,13 +166,15 @@ if select_action_2 == 2
     q2.small2.flex = 0.5;
 end
 
+sim('test.slx');
+
 % Pretty print result
 if select_action_1 == select_action_2
     disp("It's a draw!!!")
 elseif (select_action_1 == 0 && select_action_2 == 1) || (select_action_1 == 1 && select_action_2 == 2) || (select_action_1 == 2 && select_action_2 == 0)
     disp("The blue player won!");
 else
-    disp("The grey player one!");
+    disp("The grey player won!");
 end
 
-sim('test.slx')
+disp("Restart code to play again!")
