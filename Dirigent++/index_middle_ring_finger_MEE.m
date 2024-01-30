@@ -4,12 +4,12 @@
 
 % contractile element (CE)
 %===========================
-ext_imr.CE.F_max = 100;
-ext_imr.CE.l_CEopt = 0.01;              
+ext_imr.CE.F_max = 75;
+ext_imr.CE.l_CEopt = 4/300;              
 
 % serial elastic element (SEE)
 % ============================
-ext_imr.SEE.l_SEE0        = 0.01;       % rest length of SEE in [m]
+ext_imr.SEE.l_SEE0        = 8/300;       % rest length of SEE in [m]
 
 % load standard parameter set
 ext_imr = Library_mtu_simulink_mtu_standard_parameters(ext_imr);

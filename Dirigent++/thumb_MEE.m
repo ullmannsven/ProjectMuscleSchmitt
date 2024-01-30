@@ -4,12 +4,12 @@
 
 % contractile element (CE)
 %===========================
-ext_thumb.CE.F_max = 100;                 % F_max in [N] %source: Kistemaker2006, 
-ext_thumb.CE.l_CEopt = 0.01;              % optimal length of CE in [m] %source: Kistemaker2006,
+ext_thumb.CE.F_max = 150;                 % F_max in [N] %source: Kistemaker2006, 
+ext_thumb.CE.l_CEopt = 0.02;              % optimal length of CE in [m] %source: Kistemaker2006,
 
 % serial elastic element (SEE)
 % ============================
-ext_thumb.SEE.l_SEE0        = 0.01;       % rest length of SEE in [m]
+ext_thumb.SEE.l_SEE0        = 0.04;       % rest length of SEE in [m]
 
 % load standard parameter set
 ext_thumb = Library_mtu_simulink_mtu_standard_parameters(ext_thumb);
