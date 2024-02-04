@@ -5,6 +5,8 @@ disp("See progress in Simulink window!")
 select_action_1 = randi([0, 2]);
 select_action_2 = randi([0, 2]);
 
+select_action_1 = 1;
+
 disp(select_action_1);
 disp(select_action_2);
 
@@ -14,14 +16,14 @@ if select_action_1 == 0
     q.thumb1.ext = 0;
     q.thumb1.flex = 0;
     
-    q.index1.ext = 0;
+    q.index1.ext = 1;
     q.index1.flex = 0;
-    q.index2.ext = 0;
+    q.index2.ext = 1;
     q.index2.flex = 0;
     
-    q.middle1.ext = 0;
+    q.middle1.ext = 1;
     q.middle1.flex = 0;
-    q.middle2.ext = 0;
+    q.middle2.ext = 1;
     q.middle2.flex = 0;
     
     q.ring1.ext = 0;
@@ -168,7 +170,7 @@ end
 
 % Calling the scripts for the muscle parameters
 thumb_MEE
-thumb_MEE
+thumb_MEF
 index_middle_ring_finger_MEE
 index_middle_ring_finger_MEF
 small_finger_MEE
